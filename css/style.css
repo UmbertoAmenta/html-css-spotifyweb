@@ -15,6 +15,13 @@
 
 
 /*----------------
+    CUSTOM PROPERTIES
+----------------*/
+--root {
+    --sec_color_text: #7d7f84
+}
+
+/*----------------
     UTILITY
 ----------------*/
 
@@ -23,6 +30,31 @@
 /*----------------
     LAYOUT
 ----------------*/
+body {
+    height: 100vh;
+    background-color: #141922;
+    color: white;
+}
+    
+.frame {
+    height: calc(100% - 90px);
+}
+
+header {
+    background-color: black;
+    width: 50px;
+    flex-shrink: 0;
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: #282828;
+    height: 90px;
+}
 
 
 
@@ -35,6 +67,10 @@
 /*----------------
     GENERAL
 ----------------*/
+.flex {
+    display: flex;
+}
+
 
 
 /*----------------
@@ -51,3 +87,29 @@
 /*----------------
     FOOTER
 ----------------*/
+
+
+
+/*----------------
+    RESPONSIVE
+        Mobile ->
+----------------*/
+
+/* S - 639px -> */
+@media screen and (min-width: 639px) {
+    
+}
+
+
+
+/* M - 878px -> */
+@media screen and (min-width: 878px) {
+    
+}
+
+
+
+/* L - 1440px -> */
+@media screen and (min-width: 1440px) {
+    
+}
