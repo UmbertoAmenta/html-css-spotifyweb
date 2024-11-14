@@ -3,17 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="frame flex">
-        <header>
-            
+        <header class="flex">
+            <div>
+                <div class="logo">
+                    <img class="fluid logo-small" src="img/logo-small.svg" alt="logo">
+                    <img class="fluid  hidden logo-full" src="img/logo.svg" alt="logo">
+                </div>
+                <div class="nav-top">
+                    <ul>
+                        <li><button><i class="fa-solid fa-house"></i> <span class="hidden">Home</span></li></button>
+                        <li><button><i class="fa-solid fa-magnifying-glass"></i> <span class="hidden">Cerca</span></li></button>
+                        <li><button><i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i> <span class="hidden">La tua libreria</span></li></button>
+                    </ul>
+                    <div class="hidden">
+                        <h5>PLAYLIST</h5>
+                        <ul>
+                            <li>
+                                <div>
+                                    <button class="add-playlist">+</button>
+                                    <button>
+                                        <strong>Crea Playlist</strong>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <button>Nome Playlist</button>
+                            </li>
+                            <li>
+                                <button>Nome Playlist</button>
+                            </li>
+                            <li>
+                                <button>Nome Playlist</button>
+                            </li>                            
+                            <li>
+                                <button>Nome Playlist</button>
+                            </li>                            
+                            <li>
+                                <button>Nome Playlist</button>
+                            </li>                            
+                            <li>
+                                <button>Nome Playlist</button>
+                            </li>                            
+                            <li>
+                                <button>Nome Playlist</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="nav-bottom">
+                <div>
+                    <button><i class="fa-regular fa-circle-down"></i></button>
+                    <button class="hidden">Installa app</button>
+                </div>
+                <hr class="hidden">
+                <div>
+                    <button><i class="fa-regular fa-circle-user"></i></button>
+                    <strong class="hidden">John Doe</strong>
+                </div>
+            </div>
+                
         </header>
 
         <main>
-            
+            <div class="main-top"></div>
         </main>
     </div>
     <footer>

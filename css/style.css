@@ -13,29 +13,43 @@
 ----------------*/
 
 
-
 /*----------------
-    CUSTOM PROPERTIES
+CUSTOM PROPERTIES
 ----------------*/
---root {
-    --sec_color_text: #7d7f84
+:root {
+    --sec_color_text: #7d7f84;
 }
 
 /*----------------
-    UTILITY
+UTILITY
 ----------------*/
+button, i {
+    color: var(--sec_color_text);
+    background-color: black;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.fa-circle-user {
+    font-size: 25px;
+    color: var(--sec_color_text);
+    margin-top: 13px;
+}
 
 
 
 /*----------------
-    LAYOUT
+LAYOUT
 ----------------*/
 body {
     height: 100vh;
     background-color: #141922;
     color: white;
 }
-    
+
 .frame {
     height: calc(100% - 90px);
 }
@@ -59,57 +73,142 @@ footer {
 
 
 /*----------------
-    TIPOGRAPHY
+TIPOGRAPHY
 ----------------*/
 
 
 
 /*----------------
-    GENERAL
+GENERAL
 ----------------*/
 .flex {
     display: flex;
 }
 
+img.fluid {
+    width: 100%;
+    height: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
 
 
 /*----------------
-    HEADER
+HEADER
 ----------------*/
+header {
+    padding: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo .logo-full {
+    padding: 20px;
+}
+
+.nav-top, .nav-bottom {
+    text-align: center;
+}
+
+.nav-top li i {
+    font-size: 20px;
+    padding-top: 10px;
+    height: 20px;
+    width: 30px;
+}
+
+.nav-top .hidden h5 {
+    padding-top: 35px;
+}
+
+.nav-top div.hidden button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-playlist {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: black;
+    background-color: var(--sec_color_text);
+    margin-right: 7px;
+}
+
+.nav-top div.hidden li:first-child {
+    vertical-align: middle;
+}
+
+hr {
+    width: 170px;
+    color: var(--sec_color_text);
+    margin-right: 60px;
+}
+
 
 
 
 /*----------------
     MAIN
 ----------------*/
-
+.main-top {
+    height: 90px;
+    background-color: #080b12;
+}
+    
 
 /*----------------
     FOOTER
 ----------------*/
 
 
-
+    
 /*----------------
     RESPONSIVE
         Mobile ->
 ----------------*/
-
-/* S - 639px -> */
-@media screen and (min-width: 639px) {
     
+/* S  (639px ->) */
+@media screen and (min-width: 639px) {
+    header {
+        width: 230px;
+    }
+
+
+    .logo .logo-small {
+        display: none;
+    }
+
+    .nav-top,
+    .nav-bottom  {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .hidden {
+        display: inline-block;
+    }
+   
 }
 
 
 
-/* M - 878px -> */
+/* M - (878px ->) */
 @media screen and (min-width: 878px) {
     
 }
 
 
 
-/* L - 1440px -> */
+/* L - (1440px ->) */
 @media screen and (min-width: 1440px) {
     
 }
