@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,66 +13,96 @@
 <body>
     <div class="frame flex">
         <header class="flex">
-            <div>
-                <div class="logo">
-                    <img class="fluid logo-small" src="img/logo-small.svg" alt="logo">
-                    <img class="fluid  hidden logo-full" src="img/logo.svg" alt="logo">
-                </div>
-                <div class="nav-top">
-                    <ul>
-                        <li><button><i class="fa-solid fa-house"></i> <span class="hidden">Home</span></li></button>
-                        <li><button><i class="fa-solid fa-magnifying-glass"></i> <span class="hidden">Cerca</span></li></button>
-                        <li><button><i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i> <span class="hidden">La tua libreria</span></li></button>
-                    </ul>
-                    <div class="hidden">
+            
+            <div class="logo">
+                <img class="fluid logo-small" src="img/logo-small.svg" alt="logo">
+                <img class="fluid  hidden logo-full" src="img/logo.svg" alt="logo">
+            </div>
+
+            <div class="nav-top">
+                <ul class="main-nav">
+                    <li>
+                        <button>
+                            <img src="img/home.svg" alt="home">
+                            <span class="hidden">Home</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="img/search.svg" alt="cerca">
+                            <span class="hidden">Cerca</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="img/libreria.svg" alt="libreria">
+                            <span class="hidden">La tua libreria</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="playlist hidden">
+                    
+                    <div class="playlist-header">
                         <h5>PLAYLIST</h5>
-                        <ul>
-                            <li>
-                                <div>
-                                    <button class="add-playlist">+</button>
-                                    <button>
-                                        <strong>Crea Playlist</strong>
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <button>Nome Playlist</button>
-                            </li>
-                            <li>
-                                <button>Nome Playlist</button>
-                            </li>
-                            <li>
-                                <button>Nome Playlist</button>
-                            </li>                            
-                            <li>
-                                <button>Nome Playlist</button>
-                            </li>                            
-                            <li>
-                                <button>Nome Playlist</button>
-                            </li>                            
-                            <li>
-                                <button>Nome Playlist</button>
-                            </li>                            
-                            <li>
-                                <button>Nome Playlist</button>
-                            </li>
-                        </ul>
+                        <button class="add-playlist">+</button>
+                        <button>
+                            <strong>Crea Playlist</strong>
+                        </button>
                     </div>
+                    
+                    <ul>
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>                            
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>                            
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>                            
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>                            
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>
+                        <li>
+                            <button>Nome Playlist</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-                
+            
             <div class="nav-bottom">
                 <div>
-                    <button><i class="fa-regular fa-circle-down"></i></button>
+                    <button><img src="img/download.svg" alt="download"></button>
                     <button class="hidden">Installa app</button>
                 </div>
                 <hr class="hidden">
                 <div>
-                    <button><i class="fa-regular fa-circle-user"></i></button>
+                    <button><img src="img/profile.svg" alt="profilo"></button>
                     <strong class="hidden">John Doe</strong>
                 </div>
             </div>
-                
+             
         </header>
 
         <main>

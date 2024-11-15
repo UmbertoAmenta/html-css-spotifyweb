@@ -20,6 +20,7 @@ CUSTOM PROPERTIES
     --sec_color_text: #7d7f84;
 }
 
+
 /*----------------
 UTILITY
 ----------------*/
@@ -32,13 +33,6 @@ button {
     border: none;
     cursor: pointer;
 }
-
-.fa-circle-user {
-    font-size: 25px;
-    color: var(--sec_color_text);
-    margin-top: 13px;
-}
-
 
 
 /*----------------
@@ -58,11 +52,12 @@ header {
     background-color: black;
     width: 50px;
     flex-shrink: 0;
+    overflow-y: auto;
 }
 
 main {
     flex-grow: 1;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 footer {
@@ -105,9 +100,12 @@ HEADER
 ----------------*/
 header {
     padding: 10px;
-    overflow: hidden;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.nav-top {
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .logo .logo-full {
@@ -118,20 +116,25 @@ header {
     text-align: center;
 }
 
-.nav-top li i {
-    font-size: 20px;
-    padding-top: 10px;
-    height: 20px;
-    width: 30px;
+.nav-top li i,
+.nav-top li img {
+    height: 25px;
+    width: 25px;
+    margin-top: 8px;
+}
+
+.main-nav li:first-child button {
+    color: #d2d2d2;
+}
+
+.playlist-header {
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .nav-top .hidden h5 {
     padding-top: 35px;
-}
-
-.nav-top div.hidden button {
-    text-align: center;
-    margin-top: 20px;
 }
 
 .add-playlist {
@@ -143,14 +146,53 @@ header {
     margin-right: 7px;
 }
 
+.playlist li {
+    margin-top: 5px;
+}
+
+.playlist ul {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
 .nav-top div.hidden li:first-child {
     vertical-align: middle;
 }
 
-hr {
+.nav-bottom hr {
     width: 170px;
     color: var(--sec_color_text);
-    margin-right: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.nav-bottom {
+    text-align: center;
+}
+
+.nav-bottom img {
+    color: var(--sec_color_text);
+}
+
+.nav-bottom  div:first-of-type img {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-right: 2px;
+}
+
+.nav-bottom div:last-of-type img {
+    width: 30px;
+    height: 30px;
+    background-color: var(--sec_color_text);
+    border-radius: 50%;
+}
+
+.fa-circle-user {
+    font-size: 25px;
+    color: var(--sec_color_text);
+    margin-top: 13px;
 }
 
 
