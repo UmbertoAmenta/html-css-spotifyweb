@@ -57,12 +57,14 @@ header {
 
 main {
     flex-grow: 1;
-    /* overflow-y: auto; */
+    overflow-y: auto;
 }
 
 footer {
     background-color: #282828;
     height: 90px;
+    position: relative;
+    z-index: 10;
 }
 
 
@@ -123,15 +125,17 @@ header {
     margin-top: 8px;
 }
 
-.main-nav li:first-child button {
+.head-nav li:first-child button {
     color: #d2d2d2;
 }
 
-.playlist-header {
+/* .playlist-header {      utile con "overflow auto" funzionante su playlist
     position: sticky;
+    z-index: 5;
     top: 0;
     left: 0;
-}
+    background-color: black;
+} */
 
 .nav-top .hidden h5 {
     padding-top: 35px;
@@ -201,9 +205,47 @@ header {
 /*----------------
     MAIN
 ----------------*/
+
+
+/*main-top*/
+
 .main-top {
     height: 90px;
     background-color: #080b12;
+}
+
+.main-top > .flex {
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-top button {
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    height: 40px;
+    width: 220px;
+    margin-right: 5px;
+}
+
+
+/* main_nav_top */
+
+.main-nav-top .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav-top button {
+    border: none;
+    background-color: inherit;
+    padding: 20px 0 20px 20px;
+}
+
+.main-nav-top button:first-child {
+    padding: 20px 0 20px 0;
+
 }
     
 
