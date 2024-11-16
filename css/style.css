@@ -249,9 +249,31 @@ header {
 
 /* recent */
 
+.recent > h2,
+.foryou > h2,
+.pop > h2,
+h2 +h4 {
+    padding-left: 15px;
+}
+
 .recent > h2 {
     margin-bottom: 30px;
-    padding-left: 10px;
+}
+
+.foryou > h2,
+.pop > h2 {
+    margin-bottom: 13px;
+}
+
+h2 + h4 {
+    color: var(--sec_color_text);
+    margin-bottom: 25px;
+}
+
+.recent,
+.foryou,
+.pop {
+    margin-bottom: 40px;
 }
 
 .album-cover {
@@ -266,7 +288,11 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    /* text-align: center; */
+}
+
+.pop .overlay,
+.pop img {
+    border-radius: 50%;
 }
 
 .overlay i {
@@ -305,7 +331,9 @@ header {
     flex-wrap: wrap;
 }
 
-.recent .col {
+.recent .col,
+.foryou .col,
+.pop .col {
     padding: 0 13px;
     width: calc(100% / 2);
     margin-bottom: 10px;
@@ -351,7 +379,9 @@ header {
 
 /* M - (878px ->) */
 @media screen and (min-width: 878px) {
-    .recent .col {
+    .recent .col,
+    .foryou .col,
+    .pop .col {
         width: calc(100% / 4);
     }
 
@@ -361,7 +391,9 @@ header {
 
 /* L - (1440px ->) */
 @media screen and (min-width: 1440px) {
-    .recent .col {
+    .recent .col,
+    .foryou .col,
+    .pop .col {
         width: calc(100% / 6);
     }
 
