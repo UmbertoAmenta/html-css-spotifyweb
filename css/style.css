@@ -343,7 +343,40 @@ h2 + h4 {
 /*----------------
     FOOTER
 ----------------*/
+footer .flex {
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
 
+footer i {
+    background-color: #282828;
+}
+
+.foot-l,
+.foot-r {
+    width: calc(100% / 6);
+}
+
+.foot-m {
+    width: calc(100% / 3);
+}
+
+
+/* foot-l */
+
+.foot-l > div:last-child i {
+    display: inline-block;
+    padding: 5px;
+}
+
+.foot-l img {
+    width: 30px;
+    height: 30px;
+}
 
     
 /*----------------
@@ -356,7 +389,6 @@ h2 + h4 {
     header {
         width: 230px;
     }
-
 
     .logo .logo-small {
         display: none;
@@ -371,6 +403,12 @@ h2 + h4 {
     .hidden {
         display: inline-block;
     }
+
+    .foot-l img {
+        width: 40px;
+        height: 40px;
+    }
+    
 
    
 }
