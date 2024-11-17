@@ -95,6 +95,10 @@ ul li {
     display: none;
 }
 
+main img {
+    display: block;
+}
+
 
 
 /*----------------
@@ -205,6 +209,7 @@ header {
 /*----------------
     MAIN
 ----------------*/
+.main-top > div,
 .main-top + div {
     padding: 15px;
 }
@@ -343,13 +348,14 @@ h2 + h4 {
 /*----------------
     FOOTER
 ----------------*/
-footer .flex {
+footer > .flex,
+.foot-l .flex,
+.foot-r > .flex {
     height: 100%;
     padding-left: 10px;
     padding-right: 10px;
     justify-content: space-between;
     align-items: center;
-    gap: 3px;
 }
 
 footer i {
@@ -358,7 +364,7 @@ footer i {
 
 .foot-l,
 .foot-r {
-    width: calc(100% / 6);
+    width: calc(130% / 6);
 }
 
 .foot-m {
@@ -368,7 +374,8 @@ footer i {
 
 /* foot-l */
 
-.foot-l > div:last-child i {
+.foot-l > div:last-child i,
+.foot-r i {
     display: inline-block;
     padding: 5px;
 }
@@ -376,6 +383,17 @@ footer i {
 .foot-l img {
     width: 30px;
     height: 30px;
+}
+
+
+/* foot-r */
+
+.foot-r > .flex {
+    padding-right: 0;
+}
+
+.foot-r input {
+    width: 100%;
 }
 
     
