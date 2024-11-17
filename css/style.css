@@ -26,7 +26,7 @@ UTILITY
 ----------------*/
 button, i {
     color: var(--sec_color_text);
-    background-color: black;
+    background-color: inherit;
 }
 
 button {
@@ -358,17 +358,13 @@ footer > .flex,
     align-items: center;
 }
 
-footer i {
-    background-color: #282828;
-}
-
 .foot-l,
 .foot-r {
-    width: calc(130% / 6);
+    width: calc(100% / 4);
 }
 
 .foot-m {
-    width: calc(100% / 3);
+    width: calc(100% / 2.5);
 }
 
 
@@ -385,8 +381,60 @@ footer i {
     height: 30px;
 }
 
+.foot-l h6 {
+    color: var(--sec_color_text);
+}
+
+
+/* foot-m */
+
+
+.foot-m > .flex {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.foot-m .flex + div {
+    text-align: center;
+}
+
+.foot-m span:nth-child(2) {
+    display: inline-block;
+    width: 60%;
+}
+
+.foot-m input {
+    width: 100%;
+    vertical-align: text-bottom;
+}
+
+.foot-m i {
+    padding: 5px;
+    color: white;
+}
+
+.foot-m .fa-circle-play {
+    font-size: 150%;
+}
+
+.foot-m .fa-backward-step {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.foot-m .fa-forward-step {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
 
 /* foot-r */
+
+.foot-r i {
+    color: white;
+}
 
 .foot-r > .flex {
     padding-right: 0;
