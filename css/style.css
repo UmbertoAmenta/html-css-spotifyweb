@@ -9,11 +9,6 @@
 
 
 /*----------------
-    DEBUG
-----------------*/
-
-
-/*----------------
 CUSTOM PROPERTIES
 ----------------*/
 :root {
@@ -33,6 +28,39 @@ button {
     border: none;
     cursor: pointer;
 }
+
+header button:hover {
+    color: white;
+}
+
+.main-nav-top button:hover {
+    color: white;
+}
+
+.main-nav-top li:active button::after {
+    background-color: #adff2f;
+    cursor: none;
+}
+
+.main-nav-top button:active {
+    cursor: progress;
+}
+
+.main-top button:hover {
+    height: 50px;
+    width: 230px;
+    font-size: 0.9em;
+}
+
+.main-nav-top li:first-of-type button::after {
+    background-color: #adff2f;
+}
+
+footer button:hover i {
+    font-size: 1.2em;
+    color: white;
+}
+
 
 
 /*----------------
@@ -122,6 +150,28 @@ header {
     text-align: center;
 }
 
+.head-nav button::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    display: block;
+    width: 4px;
+    height: 31px;
+    background-color: inherit;
+}
+
+.head-nav li:active button::before {
+    background-color: #adff2f;
+}
+
+.head-nav button:active {
+    cursor: progress;
+}
+
+.head-nav button:hover {
+    color: white;
+}
+
 .nav-top li i,
 .nav-top li img {
     height: 25px;
@@ -132,14 +182,6 @@ header {
 .head-nav li:first-child button {
     color: #d2d2d2;
 }
-
-/* .playlist-header {      utile con "overflow auto" funzionante su playlist
-    position: sticky;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    background-color: black;
-} */
 
 .nav-top .hidden h5 {
     padding-top: 35px;
@@ -250,7 +292,19 @@ header {
     background-color: inherit;
     padding-right: 20px;
     padding-bottom: 40px;
+    text-transform: uppercase;
 }
+
+.main-nav-top button::after {
+    content: "";
+    display: block;
+    margin: 2px auto;
+    width: 30px;
+    height: 3px;
+    background-color: inherit;
+}
+
+
 
 /* recent */
 
@@ -283,6 +337,10 @@ h2 + h4 {
 
 .album-cover {
     position: relative;
+}
+
+.pop .album-cover {
+    border-radius: 50%;
 }
 
 .overlay {
@@ -475,7 +533,9 @@ footer > .flex,
         height: 40px;
     }
     
-
+    .head-nav li:first-child button::before {
+        background-color: #adff2f;
+    }
    
 }
 
